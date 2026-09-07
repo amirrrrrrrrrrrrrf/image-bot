@@ -1,1 +1,280 @@
-aW1wb3J0IG9zLCBsb2dnaW5nLCByZXF1ZXN0cywgYmFzZTY0LCBpbwpmcm9tIHRlbGVncmFtIGltcG9ydCBVcGRhdGUsIElubGluZUtleWJvYXJkQnV0dG9uLCBJbmxpbmVLZXlib2FyZE1hcmt1cApmcm9tIHRlbGVncmFtLmV4dCBpbXBvcnQgQXBwbGljYXRpb24sIENvbW1hbmRIYW5kbGVyLCBNZXNzYWdlSGFuZGxlciwgQ2FsbGJhY2tRdWVyeUhhbmRsZXIsIENvbnRleHRUeXBlcywgZmlsdGVycwpmcm9tIFBJTCBpbXBvcnQgSW1hZ2UKCmxvZ2dpbmcuYmFzaWNDb25maWcobGV2ZWw9bG9nZ2luZy5JTkZPKQpsb2dnZXIgPSBsb2dnaW5nLmdldExvZ2dlcihfX25hbWVfXykKClRPS0VOID0gb3MuZW52aXJvblsiVEVMRUdSQU1fVE9LRU4iXS5zdHJpcCgpCktFWSA9IG9zLmVudmlyb25bIkdFTUlOSV9BUElfS0VZIl0uc3RyaXAoKQpHRU1JTklfVVJMID0gImh0dHBzOi8vZ2VuZXJhdGl2ZWxhbmd1YWdlLmdvb2dsZWFwaXMuY29tL3YxYmV0YS9tb2RlbHMvZ2VtaW5pLTMuNi1mbGFzaDpnZW5lcmF0ZUNvbnRlbnQ/a2V5PSIgKyBLRVkKCk5PX0ZPUk1BVCA9ICgKICAgICLZhdmH2YU6INmH2LHar9iyINin2LIgbWFya2Rvd27YjCBib2xk2IwgaXRhbGlj2Iwg2YfYr9uM2YbaryDbjNinINmH24zahiDZgdin2YTYqOKAjNio2YbYr9uMINiu2KfYtduMINin2LPYqtmB2KfYr9mHINmG2qnZhi4gIgogICAgItmH24zahiDYs9iq2KfYsdmHICgqKinYjCDYotmG2K/YsdmE2KfbjNmGIChfKdiMINmH2LTYqtqvICgjKSDbjNinINio2qnigIzYqtuM2qkgKGApINiv2LEg2YXYqtmGINmG2LLZhi4gIgogICAgItmB2YLYtyDZhdiq2YYg2LPYp9iv2Ycg2KjZhtmI24zYsy4g2b7Yp9iz2K7igIzZh9inINqp2YjYqtin2Ycg2Ygg2LfYqNuM2LnbjCDYqNin2LTZhiDZhdqv2LEg2LjYsdmI2LHYqiDYr9in2LTYqtmHINio2KfYtNmHLiIKKQoKU1lTVEVNX1BST01QVFMgPSB7CiAgICAidGhlcmFwaXN0IjogZiLYqtmIINuM2qkg2K/ZiNiz2Kog2LXZhduM2YXbjCDZiCDYr9mE2LPZiNiyINmH2LPYqtuMINqp2Ycg2qnZhdqpINmF24zigIzaqdmG24wuINio2Kcg2KfYrdiq2LHYp9mFINmIINmF2YfYsdio2KfZhtuMINqv2YjYtCDYqNiv2Ycg2Ygg2qnZhdqpINqp2YYuIHtOT19GT1JNQVR9IiwKICAgICJpZGVhIjogICAgICBmItiq2Ygg24zaqSDYp9uM2K/Zh+KAjNm+2LHYr9in2LIg2K7ZhNin2YIg2YfYs9iq24wuINin24zYr9mH4oCM2YfYp9uMINis2LDYp9ioINmIINqp2KfYsdio2LHYr9uMINio2K/Zhy4ge05PX0ZPUk1BVH0iLAogICAgImNhcHRpb24iOiAgIGYi2KrZiCDZhdiq2K7Ytdi1INqp2b7YtNmG4oCM2YbZiNuM2LPbjCDYqNix2KfbjCDYp9uM2YbYs9iq2Kfar9ix2KfZhSDZh9iz2KrbjC4g2qnZvti02YbigIzZh9in24wg2KzYsNin2Kgg2Ygg2YXZhtin2LPYqCDYqNmG2YjbjNizLiB7Tk9fRk9STUFUfSIsCiAgICAiY2FsZW5kYXIiOiAgZiLYqtmIINmF2KrYrti12LUg2KrZgtmI24zZhSDZhdit2KrZiNin24zbjCDZh9iz2KrbjC4g2KrZgtmI24zZhSDZhdmG2LjZhSDZiCDaqdin2LHYqNix2K/bjCDYqNiz2KfYsi4ge05PX0ZPUk1BVH0iLAogICAgImJpbyI6ICAgICAgIGYi2KrZiCDZhdiq2K7Ytdi1INio24zZiOKAjNmG2YjbjNiz24wg2YfYs9iq24wuINio24zZiNmH2KfbjCDYrNiw2KfYqCDZiCDYrdix2YHZh+KAjNin24wg2KjZhtmI24zYsy4ge05PX0ZPUk1BVH0iLAogICAgImhhc2h0YWciOiAgIGYi2KrZiCDZhdiq2K7Ytdi1INmH2LTYqtqv4oCM2q/YsNin2LHbjCDZh9iz2KrbjC4g2YfYtNiq2q/igIzZh9in24wg2YXYsdiq2KjYtyDZiCDZhdmI2KvYsSDZvtuy2LTZh9in2LEg2KjYr9mHLiB7Tk9fRk9STUFUfSIsCiAgICAiZWRpdCI6ICAgICAgZiLYqtmIINmI24zYsdin2LPYqtin2LEg2YXYqtmGINmH2LPYqtuMLiDZhdiq2YYg2LHZiCDYqNmH2KrYsdiMINix2YjYp9mG4oCM2KrYsSDZiCDYstiy24zYqNin2KrYsSDaqdmGLiB7Tk9fRk9STUFUfSIsCiAgICAic2NyaXB0IjogICAgZiLYqtmIINmG2YjbjNiz2YbYr9mHINin2LPaqdix24zZvtiqINix24zZhNiyINmIINin2LPYqtmI2LHbjCDZh9iz2KrbjC4g2KfYs9qp2LHbjNm+2Kog2KzYsNin2Kgg2KjZhtmI24zYsy4ge05PX0ZPUk1BVH0iLAogICAgInRyYW5zbGF0ZSI6IGYi2KrZiCDZhdiq2LHYrNmFINit2LHZgdmH4oCM2KfbjCDZh9iz2KrbjC4g2YXYqtmGINix2Kcg2K/ZgtuM2YIg2Ygg2LHZiNin2YYg2KrYsdis2YXZhyDaqdmGLiB7Tk9fRk9STUFUfSIsCiAgICAic3VtbWFyaXplIjogZiLYqtmIINiu2YTYp9i12YfigIzYs9in2LIg2YfYs9iq24wuINmF2KrZhiDYsdinINqp2YjYqtin2Ycg2Ygg2KzYp9mF2Lkg2K7ZhNin2LXZhyDaqdmGLiB7Tk9fRk9STUFUfSIsCn0KCk1PREVfSU5UUk9TID0gewogICAgInRoZXJhcGlzdCI6ICLYp9uM2YbYrNin2YUg2Ygg2q/ZiNi0INmF24zigIzYr9mFLiDZh9ixINqG24zYstuMINqp2Ycg2K/Yp9ix24wg2Kjar9mILiIsCiAgICAiaWRlYSI6ICAgICAgItmF2YjYttmI2LnYqiDYsdmIINio2q/ZiCDYqNinINin24zYr9mH4oCM2YfYp9uMINiu2YTYp9mC2KfZhtmHINio2YfYqiDYqNiv2YUuIiwKICAgICJjYXB0aW9uIjogICAi2LnaqdizINuM2Kcg2YjbjNiv24zZiCDYqNmB2LHYs9qqINiq2Kcg2qnZvti02YYg2KjZhtmI24zYs9mFLiIsCiAgICAiY2FsZW5kYXIiOiAgItio2q/ZiCDYr9ixINqG2Ycg2K3ZiNiy2YfigIzYp9uMINmB2LnYp9mE24zYqiDZhduM4oCM2qnZhtuMINiq2Kcg2KrZgtmI24zZhSDYqNiz2KfYstmFLiIsCiAgICAiYmlvIjogICAgICAgItin2LfZhNin2LnYp9iqINiv2LHYqNin2LHZhyDYrtmI2K/YqiDbjNqpINqp2KfYsdiqINio2q/ZiCDYqNinINio24zZiCDYqNmG2YjbjNizmS4iLAogICAgImhhc2h0YWciOiAgICLZhdmI2LbZiNi5INuM2Kcg2YXYqtmG2Kog2LHZiCDYqNmG2YjbjNizINuM2Kcg2LnaqdizINio2YHYsdiz2KouIiwKICAgICJlZGl0IjogICAgICAi2YXYqtmG24wg2qnZhyDZhduM4oCM2K7ZiNin24wg2YjbjNix2KfbjNi0INio2LTZhyDYsdmIINio2YHYsdiz2KouIiwKICAgICJzY3JpcHQiOiAgICAi2YXZiNi22YjYuSDYsduM2YTYsiDbjNinINin2LPYqtmI2LHbjNiqINix2Ygg2Kjar9mILiIsCiAgICAidHJhbnNsYXRlIjogItmF2KrZhtiuINqp2Ycg2YXbjOKAjNiu2YjYp9uMINiq2LHYrNmF2Ycg2KjYtNmHINix2Ygg2KjZgdix2LPYqi4iLAogICAgInN1bW1hcml6ZSI6ICLZhdiq2YbbjCDaqdmHINmF24zigIzYrtmI2KfbjCDYrtmE2KfYtdmHINio2LTZhyDYsdmIINio2YHYsdiz2KouIiwKfQoKc3RhdGVzID0ge30KCmRlZiBtYWluX2tiKCk6CiAgICByZXR1cm4gSW5saW5lS2V5Ym9hcmRNYXJrdXAoWwogICAgICAgIFtJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+noCDYqtix2KfZvtuM2LPYqiIsICAgICAgICAgY2FsbGJhY2tfZGF0YT0ibW9kZV90aGVyYXBpc3QiKSwKICAgICAgICAgSW5saW5lS2V5Ym9hcmRCdXR0b24oIvCfkqEg2KfbjNiv2YfigIzZvtix2K/Yp9iyIiwgICAgICAgY2FsbGJhY2tfZGF0YT0ibW9kZV9pZGVhIildLAogICAgICAgIFtJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+TnSDaqtm+2LTZhuKAjNiz2KfYsiIsICAgICAgICBjYWxsYmFja19kYXRhPSJtb2RlX2NhcHRpb24iKSwKICAgICAgICAgSW5saW5lS2V5Ym9hcmRCdXR0b24oIvCfk4Ug2KrZgtmI24zZhSDZhdit2KrZiNinIiwgICAgY2FsbGJhY2tfZGF0YT0ibW9kZV9jYWxlbmRhciIpXSwKICAgICAgICBbSW5saW5lS2V5Ym9hcmRCdXR0b24oIuKcqCDYqNuM2YjigIzZhtmI24zYsyIsICAgICAgICBjYWxsYmFja19kYXRhPSJtb2RlX2JpbyIpLAogICAgICAgICBJbmxpbmVLZXlib2FyZEJ1dHRvbigiIyDZh9i02Krar+KAjNiz2KfYsiIsICAgICAgICBjYWxsYmFja19kYXRhPSJtb2RlX2hhc2h0YWciKV0sCiAgICAgICAgW0lubGluZUtleWJvYXJkQnV0dG9uKCLinILvuI8g2YjbjNix2KfbjNi0INmF2KrZhiIsICAgICBjYWxsYmFja19kYXRhPSJtb2RlX2VkaXQiKSwKICAgICAgICAgSW5saW5lS2V5Ym9hcmRCdXR0b24oIvCfjqwg2KfYs9qp2LHbjNm+2KoiLCAgICAgICAgIGNhbGxiYWNrX2RhdGE9Im1vZGVfc2NyaXB0IildLAogICAgICAgIFtJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+MkCDZhdiq2LHYrNmFIiwgICAgICAgICAgIGNhbGxiYWNrX2RhdGE9Im1vZGVfdHJhbnNsYXRlIiksCiAgICAgICAgIElubGluZUtleWJvYXJkQnV0dG9uKCLwn5OEINiu2YTYp9i12YfigIzYs9in2LIiLCAgICAgIGNhbGxiYWNrX2RhdGE9Im1vZGVfc3VtbWFyaXplIildLAogICAgXSkKCmRlZiBjYXB0aW9uX2tiKCk6CiAgICByZXR1cm4gSW5saW5lS2V5Ym9hcmRNYXJrdXAoWwogICAgICAgIFtJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+WvCDYqti12YjbjNixIiwgIGNhbGxiYWNrX2RhdGE9ImNhcF9pbWFnZSIpLAogICAgICAgICBJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+OrCDZiNuM2K/bjNmIIiwgY2FsbGJhY2tfZGF0YT0iY2FwX3ZpZGVvIildLAogICAgICAgIFtJbmxpbmVLZXlib2FyZEJ1dHRvbigi8J+PoCDZhdmG2YgiLCAgICBjYWxsYmFja19kYXRhPSJtYWluX21lbnUiKV0sCiAgICBdKQoKZGVmIGJhY2tfa2IoKToKICAgIHJldHVybiBJbmxpbmVLZXlib2FyZE1hcmt1cChbW0lubGluZUtleWJvYXJkQnV0dG9uKCLwn4+gINmF2YbZiCIsIGNhbGxiYWNrX2RhdGE9Im1haW5fbWVudSIpXV0pCgpkZWYgZ2V0X3N0YXRlKHVpZCk6CiAgICByZXR1cm4gc3RhdGVzLmdldCh1aWQsIHsibW9kZSI6IE5vbmUsICJzdGVwIjogTm9uZSwgImRhdGEiOiB7fX0pCgpkZWYgc2V0X3N0YXRlKHVpZCwgbW9kZSwgc3RlcCwgZGF0YT1Ob25lKToKICAgIHN0YXRlc1t1aWRdID0geyJtb2RlIjogbW9kZSwgInN0ZXAiOiBzdGVwLCAiZGF0YSI6IGRhdGEgb3Ige319CgpkZWYgY2xlYXJfc3RhdGUodWlkKToKICAgIHN0YXRlcy5wb3AodWlkLCBOb25lKQoKZGVmIGFza19nZW1pbmkocHJvbXB0LCBpbWFnZV9ieXRlcz1Ob25lKToKICAgIHBhcnRzID0gW3sidGV4dCI6IHByb21wdH1dCiAgICBpZiBpbWFnZV9ieXRlczoKICAgICAgICB0cnk6CiAgICAgICAgICAgIGltZyA9IEltYWdlLm9wZW4oaW8uQnl0ZXNJTyhpbWFnZV9ieXRlcykpCiAgICAgICAgICAgIGJ1ZiA9IGlvLkJ5dGVzSU8oKQogICAgICAgICAgICBpbWcuc2F2ZShidWYsIGZvcm1hdD0iSlBFRyIpCiAgICAgICAgICAgIHBhcnRzLmFwcGVuZCh7ImlubGluZV9kYXRhIjogeyJtaW1lX3R5cGUiOiAiaW1hZ2UvanBlZyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJkYXRhIjogYmFzZTY0LmI2NGVuY29kZShidWYuZ2V0dmFsdWUoKSkuZGVjb2RlKCl9fSkKICAgICAgICBleGNlcHQ6CiAgICAgICAgICAgIHBhc3MKICAgIHIgPSByZXF1ZXN0cy5wb3N0KEdFTUlOSV9VUkwsIGpzb249eyJjb250ZW50cyI6IFt7InBhcnRzIjogcGFydHN9XX0sIHRpbWVvdXQ9NjApCiAgICByLnJhaXNlX2Zvcl9zdGF0dXMoKQogICAgcmV0dXJuIHIuanNvbigpWyJjYW5kaWRhdGVzIl1bMF1bImNvbnRlbnQiXVsicGFydHMiXVswXVsidGV4dCJdCgpXRUxDT01FID0gKAogICAgItiz2YTYp9mFISDYrtmI2LQg2KfZiNmF2K/bjCDwn5GLXG5cbiIKICAgICLZhdmGINiv2LPYqtuM2KfYsSDZhdit2KrZiNin24wg2KrZiNin2YUuINin2LIg2YXZhtmI24wg2LLbjNixINuM2Ycg2K3Yp9mE2Kog2KfZhtiq2K7Yp9ioINqp2YYg2KrYpyDYtNix2YjYuSDaqdmG24zZhToiCikKCmFzeW5jIGRlZiBzdGFydCh1LCBjKToKICAgIHVpZCA9IHUuZWZmZWN0aXZlX3VzZXIuaWQKICAgIGNsZWFyX3N0YXRlKHVpZCkKICAgIGF3YWl0IHUubWVzc2FnZS5yZXBseV90ZXh0KFdFTENPTUUsIHJlcGx5X21hcmt1cD1tYWluX2tiKCkpCgphc3luYyBkZWYgaGFuZGxlX2NhbGxiYWNrKHUsIGMpOgogICAgcSA9IHUuY2FsbGJhY2tfcXVlcnkKICAgIGF3YWl0IHEuYW5zd2VyKCkKICAgIHVpZCA9IHEuZnJvbV91c2VyLmlkCiAgICBkYXRhID0gcS5kYXRhCgogICAgaWYgZGF0YSA9PSAibWFpbl9tZW51IjoKICAgICAgICBjbGVhcl9zdGF0ZSh1aWQpCiAgICAgICAgYXdhaXQgcS5tZXNzYWdlLnJlcGx5X3RleHQoItmF2YbZiNuMINin2LXZhNuMOiIsIHJlcGx5X21hcmt1cD1tYWluX2tiKCkpCiAgICAgICAgcmV0dXJuCgogICAgaWYgZGF0YS5zdGFydHN3aXRoKCJtb2RlXyIpOgogICAgICAgIG1vZGUgPSBkYXRhWzU6XQogICAgICAgIGlmIG1vZGUgPT0gImNhcHRpb24iOgogICAgICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJjaG9vc2VfbWVkaWEiKQogICAgICAgICAgICBhd2FpdCBxLm1lc3NhZ2UucmVwbHlfdGV4dCgi2KjYsdin24wg2qnZvti02YbYjCDZhtmI2Lkg2YXYr9uM2Kcg2LHZiCDYp9mG2KrYrtin2Kgg2qnZhjoiLCByZXBseV9tYXJrdXA9Y2FwdGlvbl9rYigpKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHNldF9zdGF0ZSh1aWQsIG1vZGUsICJ0YWxraW5nIikKICAgICAgICAgICAgYXdhaXQgcS5tZXNzYWdlLnJlcGx5X3RleHQoTU9ERV9JTlRST1NbbW9kZV0sIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCiAgICAgICAgcmV0dXJuCgogICAgaWYgZGF0YSA9PSAiY2FwX2ltYWdlIjoKICAgICAgICBzID0gZ2V0X3N0YXRlKHVpZCkKICAgICAgICBzWyJkYXRhIl1bIm1lZGlhX3R5cGUiXSA9ICJpbWFnZSIKICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJ3YWl0aW5nX21lZGlhIiwgc1siZGF0YSJdKQogICAgICAgIGF3YWl0IHEubWVzc2FnZS5yZXBseV90ZXh0KCLYudqp2LPYqiDYsdmIINio2YHYsdiz2KouIiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICByZXR1cm4KCiAgICBpZiBkYXRhID09ICJjYXBfdmlkZW8iOgogICAgICAgIHMgPSBnZXRfc3RhdGUodWlkKQogICAgICAgIHNbImRhdGEiXVsibWVkaWFfdHlwZSJdID0gInZpZGVvIgogICAgICAgIHNldF9zdGF0ZSh1aWQsICJjYXB0aW9uIiwgIndhaXRpbmdfbWVkaWEiLCBzWyJkYXRhIl0pCiAgICAgICAgYXdhaXQgcS5tZXNzYWdlLnJlcGx5X3RleHQoItmI24zYr9uM2YjYqiDYsdmIINio2YHYsdiz2KouIiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICByZXR1cm4KCmFzeW5jIGRlZiBoYW5kbGVfcGhvdG8odSwgYyk6CiAgICB1aWQgPSB1LmVmZmVjdGl2ZV91c2VyLmlkCiAgICBzID0gZ2V0X3N0YXRlKHVpZCkKICAgIHBob3RvID0gdS5tZXNzYWdlLnBob3RvWy0xXQogICAgZmlsZSA9IGF3YWl0IGMuYm90LmdldF9maWxlKHBob3RvLmZpbGVfaWQpCiAgICBpbWdfYnl0ZXMgPSByZXF1ZXN0cy5nZXQoZmlsZS5maWxlX3BhdGgpLmNvbnRlbnQKCiAgICBpZiBzWyJtb2RlIl0gPT0gImNhcHRpb24iIGFuZCBzWyJzdGVwIl0gPT0gIndhaXRpbmdfbWVkaWEiOgogICAgICAgIHNbImRhdGEiXVsiaW1hZ2UiXSA9IGltZ19ieXRlcwogICAgICAgIHNldF9zdGF0ZSh1aWQsICJjYXB0aW9uIiwgImFza19zdHlsZSIsIHNbImRhdGEiXSkKICAgICAgICBhd2FpdCB1Lm1lc3NhZ2UucmVwbHlfdGV4dCgi2LPYqNqpINqp2b7YtNmGINix2Ygg2Kjar9mIICjZhdir2YTYpzog2LfZhtiy2Iwg2KfZhtqv24zYsti024zYjCDZgdix2YjYtNiMINmF2LnYsdmB24wpIiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICByZXR1cm4KCiAgICBpZiBzWyJtb2RlIl0gPT0gImhhc2h0YWciOgogICAgICAgIG1zZyA9IGF3YWl0IHUubWVzc2FnZS5yZXBseV90ZXh0KCLYr9ixINit2KfZhCDYs9in2K7YqiDZh9i02Krary4uLiIpCiAgICAgICAgdHJ5OgogICAgICAgICAgICByZXN1bHQgPSBhc2tfZ2VtaW5pKFNZU1RFTV9QUk9NUFRTWyJoYXNodGFnIl0gKyAiXG5cbtio2LHYp9uMINin24zZhiDYqti12YjbjNixINmH2LTYqtqvINmF2YbYp9iz2Kgg2KjYs9in2LIuIiwgaW1nX2J5dGVzKQogICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KHJlc3VsdCwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQoZiLYrti32Kc6IHtlfSIsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCiAgICAgICAgcmV0dXJuCgogICAgYXdhaXQgdS5tZXNzYWdlLnJlcGx5X3RleHQoItin2KjYqtiv2Kcg24zaqSDar9iy24zZhtmHINin2LIg2YXZhtmIINin2YbYqtiu2KfYqCDaqdmGOiIsIHJlcGx5X21hcmt1cD1tYWluX2tiKCkpCgphc3luYyBkZWYgaGFuZGxlX3ZpZGVvKHUsIGMpOgogICAgdWlkID0gdS5lZmZlY3RpdmVfdXNlci5pZAogICAgcyA9IGdldF9zdGF0ZSh1aWQpCgogICAgaWYgc1sibW9kZSJdID09ICJjYXB0aW9uIiBhbmQgc1sic3RlcCJdID09ICJ3YWl0aW5nX21lZGlhIjoKICAgICAgICBtc2cgPSBhd2FpdCB1Lm1lc3NhZ2UucmVwbHlfdGV4dCgi2K/YsSDYrdin2YQg2KjYsdix2LPbjCDZiNuM2K/bjNmILi4uIikKICAgICAgICB0cnk6CiAgICAgICAgICAgIHZpZGVvID0gdS5tZXNzYWdlLnZpZGVvIG9yIHUubWVzc2FnZS5kb2N1bWVudAogICAgICAgICAgICBmaWxlID0gYXdhaXQgYy5ib3QuZ2V0X2ZpbGUodmlkZW8uZmlsZV9pZCkKICAgICAgICAgICAgdmlkZW9fYnl0ZXMgPSByZXF1ZXN0cy5nZXQoZmlsZS5maWxlX3BhdGgpLmNvbnRlbnQKICAgICAgICAgICAgYjY0ID0gYmFzZTY0LmI2NGVuY29kZSh2aWRlb19ieXRlcykuZGVjb2RlKCkKICAgICAgICAgICAgYm9keSA9IHsiY29udGVudHMiOiBbeyJwYXJ0cyI6IFsKICAgICAgICAgICAgICAgIHsidGV4dCI6IFNZU1RFTV9QUk9NUFRTWyJjYXB0aW9uIl0gKyAiXG5cbtin24zZhiDZiNuM2K/bjNmIINix2Kcg2KrYrdmE24zZhCDaqdmGINmIINuM2qkg2KrZiNi224zYrSDaqdmI2KrYp9mHINio2K/Zhy4ifSwKICAgICAgICAgICAgICAgIHsiaW5saW5lX2RhdGEiOiB7Im1pbWVfdHlwZSI6ICJ2aWRlby9tcDQiLCAiZGF0YSI6IGI2NH19CiAgICAgICAgICAgIF19XX0KICAgICAgICAgICAgciA9IHJlcXVlc3RzLnBvc3QoR0VNSU5JX1VSTCwganNvbj1ib2R5LCB0aW1lb3V0PTkwKQogICAgICAgICAgICBpZiByLnN0YXR1c19jb2RlID09IDIwMDoKICAgICAgICAgICAgICAgIGRlc2MgPSByLmpzb24oKVsiY2FuZGlkYXRlcyJdWzBdWyJjb250ZW50Il1bInBhcnRzIl1bMF1bInRleHQiXQogICAgICAgICAgICAgICAgc1siZGF0YSJdWyJ2aWRlb19kZXNjIl0gPSBkZXNjCiAgICAgICAgICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJhc2tfc3R5bGUiLCBzWyJkYXRhIl0pCiAgICAgICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KCLZiNuM2K/bjNmIINii2YbYp9mE24zYsiDYtNivLiDYs9io2qkg2qnZvti02YYg2LHZiCDYqNqv2YggKNi32YbYstiMINin2Ybar9uM2LLYtNuM2Iwg2YHYsdmI2LTYjCDZhdi52LHZgduMKSIsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJhc2tfdmlkZW9fZGVzYyIsIHNbImRhdGEiXSkKICAgICAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQoItmI24zYr9uM2Ygg2KLZhtin2YTbjNiyINmG2LTYry4g2YTYt9mB2Kcg2K7ZiNiv2Kog24zaqSDYqtmI2LbbjNitINqp2YjYqtin2Ycg2KfYsiDZiNuM2K/bjNmIINio2YbZiNuM2LMuIiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJhc2tfdmlkZW9fZGVzYyIsIHNbImRhdGEiXSkKICAgICAgICAgICAgYXdhaXQgbXNnLmVkaXRfdGV4dCgi2YjbjNiv24zZiCDYotmG2KfZhNuM2LIg2YbYtNivLiDZhNi32YHYpyDYrtmI2K/YqiDbjNqpINiq2YjYttuM2K0g2qnZiNiq2KfZhyDYp9iyINmI24zYr9uM2YggINio2YbZiNuM2LMuIiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKICAgICAgICByZXR1cm4KCiAgICBhd2FpdCB1Lm1lc3NhZ2UucmVwbHlfdGV4dCgi2KfYqNiq2K/YpyDbjNqpINqv2LLbjNmG2Ycg2KfYsiDZhdmG2Ygg2KfZhtiq2K7Yp9ioINqp2YY6IiwgcmVwbHlfbWFya3VwPW1haW5fa2IoKSkKCmFzeW5jIGRlZiBoYW5kbGVfdGV4dCh1LCBjKToKICAgIHVpZCA9IHUuZWZmZWN0aXZlX3VzZXIuaWQKICAgIHRleHQgPSB1Lm1lc3NhZ2UudGV4dAogICAgcyA9IGdldF9zdGF0ZSh1aWQpCgogICAgaWYgbm90IHNbIm1vZGUiXToKICAgICAgICBhd2FpdCB1Lm1lc3NhZ2UucmVwbHlfdGV4dCgK ICAgICAgICAgICAgItio2KrYr9inINuM2qkg2q/YstuM2YbZhyDYp9iyINmF2YbZiCDYp9mG2KrYrtin2Kgg2qnZhjoiLAogICAgICAgICAgICByZXBseV9tYXJrdXA9bWFpbl9rYigpCiAgICAgICAgKQogICAgICAgIHJldHVybgoKICAgIG1vZGUgPSBzWyJtb2RlIl0KICAgIHN0ZXAgPSBzWyJzdGVwIl0KICAgIG1zZyA9IGF3YWl0IHUubWVzc2FnZS5yZXBseV90ZXh0KCLYr9ixINit2KfZhCDZvtix2K/Yp9iy2LQuLi4iKQoKICAgIHRyeToKICAgICAgICBpZiBtb2RlID09ICJ0aGVyYXBpc3QiOgogICAgICAgICAgICByZXN1bHQgPSBhc2tfZ2VtaW5pKFNZU1RFTV9QUk9NUFRTWyJ0aGVyYXBpc3QiXSArIGYiXG5cbtqp2KfYsdio2LE6IHt0ZXh0fSIpCiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQocmVzdWx0LCByZXBseV9tYXJrdXA9YmFja19rYigpKQoKICAgICAgICBlbGlmIG1vZGUgPT0gImlkZWEiOgogICAgICAgICAgICByZXN1bHQgPSBhc2tfZ2VtaW5pKFNZU1RFTV9QUk9NUFRTWyJpZGVhIl0gKyBmIlxuXG7ZhdmI2LbZiNi5OiB7dGV4dH0iKQogICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KHJlc3VsdCwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKCiAgICAgICAgZWxpZiBtb2RlID09ICJjYXB0aW9uIjoKICAgICAgICAgICAgaWYgc3RlcCA9PSAiYXNrX3N0eWxlIjoKICAgICAgICAgICAgICAgIGRhdGEgPSBzWyJkYXRhIl0KICAgICAgICAgICAgICAgIGltYWdlID0gZGF0YS5nZXQoImltYWdlIikKICAgICAgICAgICAgICAgIHZpZGVvX2Rlc2MgPSBkYXRhLmdldCgidmlkZW9fZGVzYyIsICIiKQogICAgICAgICAgICAgICAgaWYgaW1hZ2U6CiAgICAgICAgICAgICAgICAgICAgcHJvbXB0ID0gU1lTVEVNX1BST01QVFNbImNhcHRpb24iXSArIGYiXG5cbtiz2KjaqToge3RleHR9XG7aqtm+2LTZhiDZhdmG2KfYs9qpINio2YbZiNuM2LMuIgogICAgICAgICAgICAgICAgICAgIHJlc3VsdCA9IGFza19nZW1pbmkocHJvbXB0LCBpbWFnZSkKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgcHJvbXB0ID0gU1lTVEVNX1BST01QVFNbImNhcHRpb24iXSArIGYiXG5cbtiq2YjYttuM2K0g2YjbjNiv24zZiDoge3ZpZGVvX2Rlc2N9XG7Ys9io2qk6IHt0ZXh0fVxuaqrZvti02YYg2YXZhtmH2KfZs9qpINio2YbZiNuM2LMuIgogICAgICAgICAgICAgICAgICAgIHJlc3VsdCA9IGFza19nZW1pbmkocHJvbXB0KQogICAgICAgICAgICAgICAgYXdhaXQgbXNnLmVkaXRfdGV4dChyZXN1bHQsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCiAgICAgICAgICAgIGVsaWYgc3RlcCA9PSAiYXNrX3ZpZGVvX2Rlc2MiOgogICAgICAgICAgICAgICAgc1siZGF0YSJdWyJ2aWRlb19kZXNjIl0gPSB0ZXh0CiAgICAgICAgICAgICAgICBzZXRfc3RhdGUodWlkLCAiY2FwdGlvbiIsICJhc2tfc3R5bGUiLCBzWyJkYXRhIl0pCiAgICAgICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KCLYs9io2qkg2qnZvti02YYg2LHZiCDYqNqv2YggKNi32YbYstiMINin2Ybar9uM2LLYtNuM2Iwg2YHYsdmI2LTYjCDZhdi52LHZgduMKSIsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KCLYp9iyINmF2YbZiCDbjNqpINqv2LLbjNmG2Ycg2qnZvti02YYg2KfZhtiq2K7Yp9ioINqp2YYuIiwgcmVwbHlfbWFya3VwPW1haW5fa2IoKSkKCiAgICAgICAgZWxpZiBtb2RlID09ICJjYWxlbmRhciI6CiAgICAgICAgICAgIHJlc3VsdCA9IGFza19nZW1pbmkoU1lTVEVNX1BST01QVFNbImNhbGVuZGFyIl0gKyBmIlxuXG7YrdmI2LLZhzoge3RleHR9XG4z2K8g2LHZiNiyINin2LPYqiDYqtmC2YjbjNmFINio2LPYp9iyLiIpCiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQocmVzdWx0LCByZXBseV9tYXJrdXA9YmFja19rYigpKQoKICAgICAgICBlbGlmIG1vZGUgPT0gImJpbyI6CiAgICAgICAgICAgIHJlc3VsdCA9IGFza19nZW1pbmkoU1lTVEVNX1BST01QVFNbImJpbyJdICsgZiJcblxu2KfYt9mE2KfYudin2Ko6IHt0ZXh0fVxu2KjbjNmIINit2LHZgdmH4oCM2KfbjCDYqNmG2YjbjNizLiIpCiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQocmVzdWx0LCByZXBseV9tYXJrdXA9YmFja19rYigpKQoKICAgICAgICBlbGlmIG1vZGUgPT0gImhhc2h0YWciOgogICAgICAgICAgICByZXN1bHQgPSBhc2tfZ2VtaW5pKFNZU1RFTV9QUk9NUFRTWyJoYXNodGFnIl0gKyBmIlxuXG7ZhdmI2LbZiNi5OiB7dGV4dH0iKQogICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KHJlc3VsdCwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKCiAgICAgICAgZWxpZiBtb2RlID09ICJlZGl0IjoKICAgICAgICAgICAgcmVzdWx0ID0gYXNrX2dlbWluaShTWVNURU1fUFJPTVBUU1siZWRpdCJdICsgZiJcblxu2YXYqtmGOlxue3RleHR9IikKICAgICAgICAgICAgYXdhaXQgbXNnLmVkaXRfdGV4dChyZXN1bHQsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCgogICAgICAgIGVsaWYgbW9kZSA9PSAic2NyaXB0IjoKICAgICAgICAgICAgcmVzdWx0ID0gYXNrX2dlbWluaShTWVNURU1fUFJPTVBUU1sic2NyaXB0Il0gKyBmIlxuXG7ZhdmI2LbZiNi5OiB7dGV4dH0iKQogICAgICAgICAgICBhd2FpdCBtc2cuZWRpdF90ZXh0KHJlc3VsdCwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKCiAgICAgICAgZWxpZiBtb2RlID09ICJ0cmFuc2xhdGUiOgogICAgICAgICAgICByZXN1bHQgPSBhc2tfZ2VtaW5pKFNZU1RFTV9QUk9NUFRTWyJ0cmFuc2xhdGUiXSArIGYiXG5cbnt0ZXh0fSIpCiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQocmVzdWx0LCByZXBseV9tYXJrdXA9YmFja19rYigpKQoKICAgICAgICBlbGlmIG1vZGUgPT0gInN1bW1hcml6ZSI6CiAgICAgICAgICAgIHJlc3VsdCA9IGFza19nZW1pbmkoU1lTVEVNX1BST01QVFNbInN1bW1hcml6ZSJdICsgZiJcblxu2YXYqtmGOlxue3RleHR9IikKICAgICAgICAgICAgYXdhaXQgbXNnLmVkaXRfdGV4dChyZXN1bHQsIHJlcGx5X21hcmt1cD1iYWNrX2tiKCkpCgogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGF3YWl0IG1zZy5lZGl0X3RleHQoItio2LHYp9uMINmF2YbZiCDbjNqpINqv2LLbjNmG2Ycg2KfZhtiq2K7Yp9ioINqp2YY6IiwgcmVwbHlfbWFya3VwPW1haW5fa2IoKSkKCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgYXdhaXQgbXNnLmVkaXRfdGV4dChmItiu2LfYpzoge2V9IiwgcmVwbHlfbWFya3VwPWJhY2tfa2IoKSkKCmFwcCA9IEFwcGxpY2F0aW9uLmJ1aWxkZXIoKS50b2tlbihUT0tFTikuYnVpbGQoKQphcHAuYWRkX2hhbmRsZXIoQ29tbWFuZEhhbmRsZXIoInN0YXJ0Iiwgc3RhcnQpKQphcHAuYWRkX2hhbmRsZXIoQ2FsbGJhY2tRdWVyeUhhbmRsZXIoaGFuZGxlX2NhbGxiYWNrKSkKYXBwLmFkZF9oYW5kbGVyKE1lc3NhZ2VIYW5kbGVyKGZpbHRlcnMuUEhPVE8sIGhhbmRsZV9waG90bykpCmFwcC5hZGRfaGFuZGxlcihNZXNzYWdlSGFuZGxlcihmaWx0ZXJzLlZJREVPIHwgZmlsdGVycy5Eb2N1bWVudC5WSURFTywgaGFuZGxlX3ZpZGVvKSkKYXBwLmFkZF9oYW5kbGVyKE1lc3NhZ2VIYW5kbGVyKGZpbHRlcnMuVEVYVCAmIH5maWx0ZXJzLkNPTU1BTkQsIGhhbmRsZV90ZXh0KSkKbG9nZ2VyLmluZm8oIkJvdCB2NCBzdGFydGVkISIpCmFwcC5ydW5fcG9sbGluZygpCg==
+import os, logging, requests, base64, io
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ContextTypes, filters
+from PIL import Image
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+TOKEN = os.environ["TELEGRAM_TOKEN"].strip()
+KEY = os.environ["GEMINI_API_KEY"].strip()
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=" + KEY
+
+NO_FORMAT = (
+    "مهم: هرگز از markdown، bold، italic، هدینگ یا هیچ قالب‌بندی خاصی استفاده نکن. "
+    "هیچ ستاره (**)، آندرلاین (_)، هشتگ (#) یا بک‌تیک (`) در متن نزن. "
+    "فقط متن ساده بنویس. پاسخ‌ها کوتاه و طبیعی باشن مگر ضرورت داشته باشه."
+)
+
+SYSTEM_PROMPTS = {
+    "therapist": f"تو یک دوست صمیمی و دلسوز هستی که کمک می‌کنی. با احترام و مهربانی گوش بده و کمک کن. {NO_FORMAT}",
+    "idea":      f"تو یک ایده‌پرداز خلاق هستی. ایده‌های جذاب و کاربردی بده. {NO_FORMAT}",
+    "caption":   f"تو متخصص کپشن‌نویسی برای اینستاگرام هستی. کپشن‌های جذاب و مناسب بنویس. {NO_FORMAT}",
+    "calendar":  f"تو متخصص تقویم محتوایی هستی. تقویم منظم و کاربردی بساز. {NO_FORMAT}",
+    "bio":       f"تو متخصص بیو‌نویسی هستی. بیوهای جذاب و حرفه‌ای بنویس. {NO_FORMAT}",
+    "hashtag":   f"تو متخصص هشتگ‌گذاری هستی. هشتگ‌های مرتبط و موثر پیشنهاد بده. {NO_FORMAT}",
+    "edit":      f"تو ویراستار متن هستی. متن را بهتر، روان‌تر و زیباتر کن. {NO_FORMAT}",
+    "script":    f"تو نویسنده اسکریپت ریلز و استوری هستی. اسکریپت جذاب بنویس. {NO_FORMAT}",
+    "translate": f"تو مترجم حرفه‌ای هستی. متن را دقیق و روان ترجمه کن. {NO_FORMAT}",
+    "summarize": f"تو خلاصه‌ساز هستی. متن را کوتاه و جامع خلاصه کن. {NO_FORMAT}",
+}
+
+MODE_INTROS = {
+    "therapist": "اینجام و گوش می‌دم. هر چیزی که داری بگو.",
+    "idea":      "موضوعت رو بگو تا ایده‌های خلاقانه بهت بدم.",
+    "caption":   "عکس یا ویدیو بفرست تا کپشن بنویسم.",
+    "calendar":  "بگو در چه حوزه‌ای فعالیت می‌کنی تا تقویم بسازم.",
+    "bio":       "اطلاعاتی درباره خودت یا کارت بگو تا بیو بنویسم.",
+    "hashtag":   "موضوع یا متنت رو بنویس یا عکس بفرست.",
+    "edit":      "متنی که می‌خوای ویرایش بشه رو بفرست.",
+    "script":    "موضوع ریلز یا استوریت رو بگو.",
+    "translate": "متنی که می‌خوای ترجمه بشه رو بفرست.",
+    "summarize": "متنی که می‌خوای خلاصه بشه رو بفرست.",
+}
+
+states = {}
+
+def main_kb():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🧠 تراپیست",         callback_data="mode_therapist"),
+         InlineKeyboardButton("💡 ایده‌پرداز",       callback_data="mode_idea")],
+        [InlineKeyboardButton("📝 کپشن‌ساز",        callback_data="mode_caption"),
+         InlineKeyboardButton("📅 تقویم محتوا",    callback_data="mode_calendar")],
+        [InlineKeyboardButton("✨ بیو‌نویس",        callback_data="mode_bio"),
+         InlineKeyboardButton("# هشتگ‌ساز",        callback_data="mode_hashtag")],
+        [InlineKeyboardButton("✂️ ویرایش متن",     callback_data="mode_edit"),
+         InlineKeyboardButton("🎬 اسکریپت",         callback_data="mode_script")],
+        [InlineKeyboardButton("🌐 مترجم",           callback_data="mode_translate"),
+         InlineKeyboardButton("📄 خلاصه‌ساز",      callback_data="mode_summarize")],
+    ])
+
+def caption_kb():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🖼 تصویر",  callback_data="cap_image"),
+         InlineKeyboardButton("🎬 ویدیو", callback_data="cap_video")],
+        [InlineKeyboardButton("🏠 منو",    callback_data="main_menu")],
+    ])
+
+def back_kb():
+    return InlineKeyboardMarkup([[InlineKeyboardButton("🏠 منو", callback_data="main_menu")]])
+
+def get_state(uid):
+    return states.get(uid, {"mode": None, "step": None, "data": {}})
+
+def set_state(uid, mode, step, data=None):
+    states[uid] = {"mode": mode, "step": step, "data": data or {}}
+
+def clear_state(uid):
+    states.pop(uid, None)
+
+def ask_gemini(prompt, image_bytes=None):
+    parts = [{"text": prompt}]
+    if image_bytes:
+        try:
+            img = Image.open(io.BytesIO(image_bytes))
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG")
+            parts.append({"inline_data": {"mime_type": "image/jpeg",
+                                          "data": base64.b64encode(buf.getvalue()).decode()}})
+        except:
+            pass
+    r = requests.post(GEMINI_URL, json={"contents": [{"parts": parts}]}, timeout=60)
+    r.raise_for_status()
+    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+
+WELCOME = (
+    "سلام! خوش اومدی 👋\n\n"
+    "من دستیار محتوای توام. از منوی زیر یه حالت انتخاب کن تا شروع کنیم:"
+)
+
+async def start(u, c):
+    uid = u.effective_user.id
+    clear_state(uid)
+    await u.message.reply_text(WELCOME, reply_markup=main_kb())
+
+async def handle_callback(u, c):
+    q = u.callback_query
+    await q.answer()
+    uid = q.from_user.id
+    data = q.data
+
+    if data == "main_menu":
+        clear_state(uid)
+        await q.message.reply_text("منوی اصلی:", reply_markup=main_kb())
+        return
+
+    if data.startswith("mode_"):
+        mode = data[5:]
+        if mode == "caption":
+            set_state(uid, "caption", "choose_media")
+            await q.message.reply_text("برای کپشن، نوع مدیا را انتخاب کن:", reply_markup=caption_kb())
+        else:
+            set_state(uid, mode, "talking")
+            await q.message.reply_text(MODE_INTROS[mode], reply_markup=back_kb())
+        return
+
+    if data == "cap_image":
+        s = get_state(uid)
+        s["data"]["media_type"] = "image"
+        set_state(uid, "caption", "waiting_media", s["data"])
+        await q.message.reply_text("عکست رو بفرست.", reply_markup=back_kb())
+        return
+
+    if data == "cap_video":
+        s = get_state(uid)
+        s["data"]["media_type"] = "video"
+        set_state(uid, "caption", "waiting_media", s["data"])
+        await q.message.reply_text("ویدیوت رو بفرست.", reply_markup=back_kb())
+        return
+
+async def handle_photo(u, c):
+    uid = u.effective_user.id
+    s = get_state(uid)
+    photo = u.message.photo[-1]
+    file = await c.bot.get_file(photo.file_id)
+    img_bytes = requests.get(file.file_path).content
+
+    if s["mode"] == "caption" and s["step"] == "waiting_media":
+        s["data"]["image"] = img_bytes
+        set_state(uid, "caption", "ask_style", s["data"])
+        await u.message.reply_text("سبک کپشن رو بگو (مثلا: طنز، انگیزشی، فروش، معرفی)", reply_markup=back_kb())
+        return
+
+    if s["mode"] == "hashtag":
+        msg = await u.message.reply_text("در حال ساخت هشتگ...")
+        try:
+            result = ask_gemini(SYSTEM_PROMPTS["hashtag"] + "\n\nبرای این تصویر هشتگ مناسب بساز.", img_bytes)
+            await msg.edit_text(result, reply_markup=back_kb())
+        except Exception as e:
+            await msg.edit_text(f"خطا: {e}", reply_markup=back_kb())
+        return
+
+    await u.message.reply_text("ابتدا یک گزینه از منو انتخاب کن:", reply_markup=main_kb())
+
+async def handle_video(u, c):
+    uid = u.effective_user.id
+    s = get_state(uid)
+
+    if s["mode"] == "caption" and s["step"] == "waiting_media":
+        msg = await u.message.reply_text("در حال بررسی ویدیو...")
+        try:
+            video = u.message.video or u.message.document
+            file = await c.bot.get_file(video.file_id)
+            video_bytes = requests.get(file.file_path).content
+            b64 = base64.b64encode(video_bytes).decode()
+            body = {"contents": [{"parts": [
+                {"text": SYSTEM_PROMPTS["caption"] + "\n\nاین ویدیو را تحلیل کن و یک توضیح کوتاه بده."},
+                {"inline_data": {"mime_type": "video/mp4", "data": b64}}
+            ]}]}
+            r = requests.post(GEMINI_URL, json=body, timeout=90)
+            if r.status_code == 200:
+                desc = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+                s["data"]["video_desc"] = desc
+                set_state(uid, "caption", "ask_style", s["data"])
+                await msg.edit_text("ویدیو آنالیز شد. سبک کپشن رو بگو (طنز، انگیزشی، فروش، معرفی)", reply_markup=back_kb())
+            else:
+                set_state(uid, "caption", "ask_video_desc", s["data"])
+                await msg.edit_text("ویدیو آنالیز نشد. لطفا خودت یک توضیح کوتاه از ویدیو بنویس.", reply_markup=back_kb())
+        except Exception:
+            set_state(uid, "caption", "ask_video_desc", s["data"])
+            await msg.edit_text("ویدیو آنالیز نشد. لطفا خودت یک توضیح کوتاه از ویدیو بنویس.", reply_markup=back_kb())
+        return
+
+    await u.message.reply_text("ابتدا یک گزینه از منو انتخاب کن:", reply_markup=main_kb())
+
+async def handle_text(u, c):
+    uid = u.effective_user.id
+    text = u.message.text
+    s = get_state(uid)
+
+    if not s["mode"]:
+        await u.message.reply_text(
+            "ابتدا یک گزینه از منو انتخاب کن:",
+            reply_markup=main_kb()
+        )
+        return
+
+    mode = s["mode"]
+    step = s["step"]
+    msg = await u.message.reply_text("در حال پردازش...")
+
+    try:
+        if mode == "therapist":
+            result = ask_gemini(SYSTEM_PROMPTS["therapist"] + f"\n\nکاربر: {text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "idea":
+            result = ask_gemini(SYSTEM_PROMPTS["idea"] + f"\n\nموضوع: {text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "caption":
+            if step == "ask_style":
+                data = s["data"]
+                image = data.get("image")
+                video_desc = data.get("video_desc", "")
+                if image:
+                    prompt = SYSTEM_PROMPTS["caption"] + f"\n\nسبک: {text}\nکپشن مناسب بنویس."
+                    result = ask_gemini(prompt, image)
+                else:
+                    prompt = SYSTEM_PROMPTS["caption"] + f"\n\nتوضیح ویدیو: {video_desc}\nسبک: {text}\nکپشن مناسب بنویس."
+                    result = ask_gemini(prompt)
+                await msg.edit_text(result, reply_markup=back_kb())
+            elif step == "ask_video_desc":
+                s["data"]["video_desc"] = text
+                set_state(uid, "caption", "ask_style", s["data"])
+                await msg.edit_text("سبک کپشن رو بگو (طنز، انگیزشی، فروش، معرفی)", reply_markup=back_kb())
+            else:
+                await msg.edit_text("از منو یک گزینه کپشن انتخاب کن.", reply_markup=main_kb())
+
+        elif mode == "calendar":
+            result = ask_gemini(SYSTEM_PROMPTS["calendar"] + f"\n\nحوزه: {text}\nیک تقویم محتوایی ۳۰ روزه بساز.")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "bio":
+            result = ask_gemini(SYSTEM_PROMPTS["bio"] + f"\n\nاطلاعات: {text}\nبیو حرفه‌ای بنویس.")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "hashtag":
+            result = ask_gemini(SYSTEM_PROMPTS["hashtag"] + f"\n\nموضوع: {text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "edit":
+            result = ask_gemini(SYSTEM_PROMPTS["edit"] + f"\n\nمتن:\n{text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "script":
+            result = ask_gemini(SYSTEM_PROMPTS["script"] + f"\n\nموضوع: {text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "translate":
+            result = ask_gemini(SYSTEM_PROMPTS["translate"] + f"\n\n{text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        elif mode == "summarize":
+            result = ask_gemini(SYSTEM_PROMPTS["summarize"] + f"\n\nمتن:\n{text}")
+            await msg.edit_text(result, reply_markup=back_kb())
+
+        else:
+            await msg.edit_text("از منو یک گزینه انتخاب کن:", reply_markup=main_kb())
+
+    except Exception as e:
+        await msg.edit_text(f"خطا: {e}", reply_markup=back_kb())
+
+app = Application.builder().token(TOKEN).build()
+app.add_handler(CommandHandler("start", start))
+app.add_handler(CallbackQueryHandler(handle_callback))
+app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
+app.add_handler(MessageHandler(filters.VIDEO | filters.Document.VIDEO, handle_video))
+app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
+logger.info("Bot v4 started!")
+app.run_polling()
