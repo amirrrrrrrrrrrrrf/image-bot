@@ -42,3 +42,4 @@ app.add_handler(MessageHandler(filters.PHOTO,photo))
 app.add_handler(MessageHandler(filters.TEXT&~filters.COMMAND,txt))
 app.add_handler(CallbackQueryHandler(btn))
 app.run_polling()
+
