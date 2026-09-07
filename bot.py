@@ -29,7 +29,7 @@ def ask(img, prompt):
     image = Image.open(io.BytesIO(img))
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-3.6-flash",
         contents=[prompt, image]
     )
     return response.text
