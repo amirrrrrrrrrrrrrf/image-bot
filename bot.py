@@ -27,7 +27,7 @@ if not GEMINI_API_KEY:
 logger.info(f"Gemini key loaded: {GEMINI_API_KEY[:8]}...")
 ​
 # Use Gemini REST API directly (no SDK auth issues)
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent?key={GEMINI_API_KEY}"
 ​
 user_sessions = {}
 ​
