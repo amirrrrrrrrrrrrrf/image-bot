@@ -2,131 +2,110 @@ import os
 import sys
 import logging
 import requests
-import io
-from PIL import Image
+import base64
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application, CommandHandler, MessageHandler,
     CallbackQueryHandler, ContextTypes, filters
 )
 ​
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 ​
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 ​
-if not TELEGRAM_TOKEN:
-    logger.error("TELEGRAM_TOKEN is missing!")
+if not TELEGRAM_TOKEN or not GEMINI_API_KEY:
+    logger.error("Missing TELEGRAM_TOKEN or GEMINI_API_KEY")
     sys.exit(1)
 ​
-if not GEMINI_API_KEY:
-    logger.error("GEMINI_API_KEY is missing!")
-    sys.exit(1)
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY
 ​
-logger.info(f"Gemini key loaded: {GEMINI_API_KEY[:8]}...")
+user_images = {}
 ​
-# Use Gemini REST API directly (no SDK auth issues)
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent?key={GEMINI_API_KEY}"
+WELCOME = """سلام! ربات تحلیل تصویر آماده‌ست
 ​
-user_sessions = {}
+یک تصویر بفرست تا شروع کنیم!"""
 ​
-WELCOME_TEXT = """✍️ سلام! من ربات تحلیل و ویرایش تصویر هستم ⚡
-​
-📸 یک تصویر برام بفرست و بعد بگو چیکار میخوای:
-​
-• 🔍 توضیح تصویر (فارسی و انگلیسی)
-• 📝 تولید کپشن اینستاگرام
-• 📢 متن تبلیغاتی حرفه‌ای
-• 🔎 راهنمای ویرایش حرفه‌ای
-• ❓ هر سوالی درباره تصویر"""
-​
-QUICK_ACTIONS = [
-    [("\U0001f50d توضیح فارسی", "describe_fa"), ("\U0001f310 Describe English", "describe_en")],
-    [("\U0001f4dd کپشن اینستا", "caption_insta"), ("\U0001f4e2 متن تبلیغاتی", "ad_text")],
-    [("\U0001f50e راهنمای ویرایش", "edit_guide"), ("\U0001f4dc متن SEO", "seo_alt")],
+ACTIONS = [
+    [("توضیح فارسی", "fa"), ("Describe English", "en")],
+    [("کپشن اینستا", "insta"), ("متن تبلیغاتی", "ad")],
+    [("راهنمای ویرایش", "edit"), ("متن SEO", "seo")],
 ]
 ​
 PROMPTS = {
-    "describe_fa": "تصویر رو به فارسی دقیق و کامل توضیح بده. همه جزئیات رو بگو.",
-    "describe_en": "Describe this image in detail in English. Cover all elements, colors, composition, mood and context.",
-    "caption_insta": "برای این تصویر ۳ کپشن جذاب اینستاگرامی بنویس (فارسی). هر کدام با هشتگ و ایموجی مناسب باشه.",
-    "ad_text": "برای این تصویر یک متن تبلیغاتی جذاب بنویس. شامل هدلاین، بدنه متن و کال تو اکشن.",
-    "edit_guide": "به عنوان متخصص طراحی گرافیک، پیشنهادهای دقیق برای بهبود این تصویر بده.",
-    "seo_alt": "برای این تصویر بنویس: ۱) تگ Alt سئوی ۲) عنوان صفحه ۳) توضیح تصویر برای وبسایت.",
+    "fa": "این تصویر رو به فارسی کامل توضیح بده.",
+    "en": "Describe this image in detail in English.",
+    "insta": "سه کپشن اینستاگرامی جذاب فارسی با هشتگ بنویس.",
+    "ad": "یک متن تبلیغاتی حرفه‌ای فارسی بنویس.",
+    "edit": "پیشنهادهای حرفه‌ای برای بهبود این تصویر بده.",
+    "seo": "Alt tag و توضیح SEO فارسی برای این تصویر بنویس.",
 }
 ​
-def call_gemini(prompt: str, image_bytes: bytes) -> str:
-    import base64
-    image_b64 = base64.b64encode(image_bytes).decode()
-    
-    payload = {
+def ask_gemini(image_bytes, prompt):
+    img_b64 = base64.b64encode(image_bytes).decode()
+    body = {
         "contents": [{
             "parts": [
                 {"text": prompt},
-                {"inline_data": {"mime_type": "image/jpeg", "data": image_b64}}
+                {"inline_data": {"mime_type": "image/jpeg", "data": img_b64}}
             ]
         }]
     }
-    
-    resp = requests.post(GEMINI_API_URL, json=payload, timeout=30)
-    resp.raise_for_status()
-    data = resp.json()
-    return data["candidates"][0]["content"]["parts"][0]["text"]
+    r = requests.post(GEMINI_URL, json=body, timeout=40)
+    r.raise_for_status()
+    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
 ​
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(WELCOME_TEXT)
-​
-async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    photo = update.message.photo[-1]
-    file = await context.bot.get_file(photo.file_id)
-    response = requests.get(file.file_path)
-    image_bytes = response.content
-    user_sessions[user_id] = {"image_bytes": image_bytes}
-    
-    keyboard = [[InlineKeyboardButton(text, callback_data=cb) for text, cb in row] for row in QUICK_ACTIONS]
-    await update.message.reply_text(
-        "✅ تصویر دریافت شد! یکی رو انتخاب کن یا هر سوالی داری بنویس ❤️",
-        reply_markup=InlineKeyboardMarkup(keyboard)
+def make_keyboard():
+    return InlineKeyboardMarkup(
+        [[InlineKeyboardButton(t, callback_data=cb) for t, cb in row] for row in ACTIONS]
     )
 ​
-async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    user_id = query.from_user.id
-    if user_id not in user_sessions:
-        await query.message.reply_text("⚠️ ابتدا یک تصویر بفرست!")
-        return
-    prompt = PROMPTS.get(query.data, "")
-    await process_image(query.message, user_id, prompt)
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(WELCOME)
 ​
-async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    if user_id not in user_sessions:
-        await update.message.reply_text("📸 ابتدا یک تصویر بفرست!")
-        return
-    await process_image(update.message, user_id, update.message.text)
+async def photo_received(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    uid = update.effective_user.id
+    photo = update.message.photo[-1]
+    file = await context.bot.get_file(photo.file_id)
+    r = requests.get(file.file_path)
+    user_images[uid] = r.content
+    await update.message.reply_text(
+        "تصویر دریافت شد! یکی رو انتخاب کن:",
+        reply_markup=make_keyboard()
+    )
 ​
-async def process_image(message, user_id: int, prompt: str):
-    thinking = await message.reply_text("⏳ در حال تحلیل...")
+async def button_pressed(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    q = update.callback_query
+    await q.answer()
+    uid = q.from_user.id
+    if uid not in user_images:
+        await q.message.reply_text("ابتدا یک تصویر بفرست!")
+        return
+    prompt = PROMPTS.get(q.data, "")
+    await run_analysis(q.message, uid, prompt)
+​
+async def text_received(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    uid = update.effective_user.id
+    if uid not in user_images:
+        await update.message.reply_text("ابتدا یک تصویر بفرست!")
+        return
+    await run_analysis(update.message, uid, update.message.text)
+​
+async def run_analysis(message, uid, prompt):
+    msg = await message.reply_text("در حال تحلیل...")
     try:
-        image_bytes = user_sessions[user_id]["image_bytes"]
-        result = call_gemini(prompt, image_bytes)
-        await thinking.delete()
-        keyboard = [[InlineKeyboardButton(text, callback_data=cb) for text, cb in row] for row in QUICK_ACTIONS]
-        await message.reply_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
+        result = ask_gemini(user_images[uid], prompt)
+        await msg.edit_text(result)
     except Exception as e:
-        await thinking.edit_text(f"❌ خطا: {str(e)}")
-​
-def main():
-    app = Application.builder().token(TELEGRAM_TOKEN).build()
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
-    app.add_handler(CallbackQueryHandler(handle_callback))
-    logger.info("Bot is running!")
-    app.run_polling()
+        await msg.edit_text(f"خطا: {e}")
 ​
 if __name__ == "__main__":
-    main()
+    app = Application.builder().token(TELEGRAM_TOKEN).build()
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(MessageHandler(filters.PHOTO, photo_received))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, text_received))
+    app.add_handler(CallbackQueryHandler(button_pressed))
+    logger.info("Bot started!")
+    app.run_polling()
+​
